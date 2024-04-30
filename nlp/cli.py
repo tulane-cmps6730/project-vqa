@@ -40,8 +40,8 @@ def dl_data():
     data_file = config.get('data', 'file')
     print('downloading from %s to %s' % (data_url, data_file))
     r = requests.get(data_url)
-    with open(data_file, 'wt') as f:
-        f.write(r.text)
+    with open(data_file, 'wb') as f:  # Note the 'wb' flag here
+        f.write(r.content)  # Use r.content to write bytes instead of r.text
     
 
 def data2df():

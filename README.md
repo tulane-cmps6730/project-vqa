@@ -1,4 +1,14 @@
-# CMPS 6730 Sample Project
+# CMPS 6730 Project: Visual Question Answering
+
+### Goal, methods, results:
+
+The goal of this project aims to explore method for solving visual question answering problem. The model takes an image and question text as input and select an answer from answer space that contains all possible answers. Two baseline models and one complex model are used to test their performance on a vqa dataset that contains around 9974 training samples and 2494 testing samples.
+
+### Key components:
+
+- Dataset: load and preprocessing dataset
+- Input: tokenization and word embedding of question text
+- Model: integrating feature of language and visual model to get image-text understanding
 
 This repository contains starter code for the final project in CMPS 4730/6730: Natural Language Processing at Tulane University.
 
